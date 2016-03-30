@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="15dp"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Home_Personal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvFriendSearchCaption"
+        style="@style/RobotoTextViewStyle.ListItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/friends_search_caption"
+        android:textColor="@color/grey"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <EditText
+                style="@style/RoundedSearchEditTextCustom"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/search_edit_height"
+                android:id="@+id/etSearch"
+                android:paddingRight="@dimen/margin_large"
+                android:layout_gravity="center_horizontal" />
+
+            <ProgressBar
+                android:id="@+id/pbSearch"
+                style="?android:attr/progressBarStyleSmall"
+                android:layout_alignParentRight="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:visibility="gone"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvSearchResult"
+        style="@style/RobotoTextViewStyle.ListItemSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/friends_search_result_caption"
+        android:textColor="@color/grey"/>
+        </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvSearchResult"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/default_divider">
+    </android.support.v7.widget.RecyclerView>
+</LinearLayout>
+

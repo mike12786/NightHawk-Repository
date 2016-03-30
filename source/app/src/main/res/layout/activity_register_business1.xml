@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Register_Business1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:src="@drawable/ic_image"
+                    android:layout_centerVertical="true"
+                    android:layout_height="@dimen/image_large"/>
+
+                <ImageView
+                    android:id="@+id/ivBusinessProfile"
+                    android:layout_width="match_parent"
+                    android:scaleType="centerCrop"
+                    android:layout_height="@dimen/image_very_large"/>
+
+                <TextView
+                    style="@style/AppTextView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:layout_below="@+id/ivBusinessProfile"
+                    android:text="UPLOAD PHOTO"/>
+
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_large"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/etBusinessName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:hint="Business Name"
+                    android:singleLine="true"
+                    android:nextFocusDown="@+id/etBusinessTypeOfEstablishment"
+                    android:theme="@style/AppEditTextStyle"
+                    />
+
+                <EditText
+                    android:id="@+id/etBusinessAddress"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:focusable="false"
+                    android:hint="Address"
+                    android:nextFocusDown="@+id/etBusinessTypeOfEstablishment"
+                    android:theme="@style/AppEditTextStyle"
+                     />
+
+                <EditText
+                    android:id="@+id/etBusinessTypeOfEstablishment"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:singleLine="true"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:hint="Type of Establishment"
+                    android:nextFocusDown="@+id/etHoursOfOperation"
+                    android:theme="@style/AppEditTextStyle"
+                    />
+
+                <EditText
+                    android:id="@+id/etHoursOfOperation"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:singleLine="true"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:hint="Hours of Operation"
+                    android:nextFocusDown="@+id/etBusinessContactNo"
+                    android:theme="@style/AppEditTextStyle"/>
+
+                <EditText
+                    android:id="@+id/etBusinessContactNo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:singleLine="true"
+                    android:hint="Contact No"
+                    android:nextFocusDown="@+id/etBusinessWebSiteUrl"
+                    android:theme="@style/AppEditTextStyle"/>
+
+                <EditText
+                    android:id="@+id/etBusinessWebSiteUrl"
+                    android:layout_width="fill_parent"
+                    android:layout_height="@dimen/edit_text_extra_large"
+                    android:layout_marginBottom="@dimen/margin_normal"
+                    android:singleLine="true"
+                    android:hint="Website URL"
+                    android:imeOptions="actionDone"
+                    android:theme="@style/AppEditTextStyle"/>
+            </LinearLayout>
+            <Button
+                android:id="@+id/btnRegisterBusiness1Next"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/btn_transparent_black"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="Next"
+                android:textSize="@dimen/textsize_extra_large"
+                android:theme="@style/AppButtonStyle.BlackTransparent"/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

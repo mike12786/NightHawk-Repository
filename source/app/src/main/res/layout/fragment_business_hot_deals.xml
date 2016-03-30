@@ -1,0 +1,62 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Home_Business">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="@dimen/margin_extra_large">
+
+        <TextView
+            android:text="What's New?"
+            android:layout_width="wrap_content"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/textsize_extra_large"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_normal"/>
+
+        <EditText
+            android:id="@+id/etHotDealsTitle"
+            android:layout_width="fill_parent"
+            android:background="@color/colorWhite"
+            android:elevation="2dp"
+            android:gravity="top"
+            android:maxLines="1"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:padding="@dimen/margin_small"
+            android:textSize="@dimen/textsize_normal"
+            android:hint="Title"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etHotDeals"
+            android:layout_width="fill_parent"
+            android:background="@color/colorWhite"
+            android:elevation="2dp"
+            android:gravity="top"
+            android:padding="@dimen/margin_small"
+            android:textSize="@dimen/textsize_normal"
+            android:minHeight="@dimen/image_large"
+            android:hint="Enter your current deals"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnBusinessHotDealsUpdate"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_transparent_black"
+        android:layout_marginTop="@dimen/margin_large"
+        android:padding="0dp"
+        android:layout_margin="0dp"
+        android:textSize="@dimen/textsize_extra_large"
+        android:text="Update"
+        android:theme="@style/AppButtonStyle.Red"/>
+
+</RelativeLayout>

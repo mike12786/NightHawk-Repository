@@ -1,0 +1,93 @@
+<resources>
+    <string name="app_name">Night Hawk</string>
+    <string name="title_activity_activity__home__business">Activity_Home_Business</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_activity__home__personal">Activity_Home_Personal</string>
+    <string name="terms_and_conditions">Activity_Home_Personal</string>
+    <string name="action_done">Done</string>
+
+    <string name="hint_search_edit">Search (Ex. Bars, Night clubs)</string>
+    <string name="tab_personal_hot_deals">Hot Deals</string>
+    <string name="tab_personal_my_group">My Friends</string>
+    <string name="tab_personal_check_in">Check In</string>
+    <string name="tab_personal_my_clubs_title">MY CLUBS</string>
+    <string name="placeholder_lorem_ipsum_medium">Lorem iipsum dolor sit amet, consectetuer adipiscing elised dia mnonummy nibh euismod tincidunt et laoreet.</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete selection</string>
+    <string name="alert_update_sucess">Update sucessfull</string>
+    <string name="progress_saving">Saving...</string>
+    <string name="error_server_error">Server error, try again later...</string>
+    <string name="title_activity_activity__settings">Settings</string>
+    <string name="alert_save_completed">Changes saved...</string>
+    <string name="alert_logout">\"Are you sure you want to log out?\"</string>
+    <string name="lbl_unhide">SHOW ME</string>
+    <string name="lbl_hide">HIDE ME</string>
+    <string name="progress_loading_data">Loading data...</string>
+    <string name="title_activity_activity__home__friends">My Group</string>
+    <string name="title_activity_home_friends_mygroup">MY GROUP</string>
+    <string name="title_activity_home_friends_myfriends">MY FRIENDS</string>
+    <string name="action_invite">Invite friends</string>
+    <string name="action_add">Add friend</string>
+    <string name="friends_my_group_action_desc">Tap a name to remove them from your group</string>
+    <string name="friends_action_desc">Tap a name to add them to your group</string>
+    <string name="friends_search_caption">Search by Name or Email:</string>
+    <string name="friends_search_result_caption">Result:</string>
+    <string name="title_activity_activity__friends__invite">INVITE FRIEND</string>
+    <string name="confirm_send_friend_request">Send friend request?</string>
+    <string name="title_activity_activity__personal_hotdeals">HOT DEALS</string>
+    <string name="business_item_hint">A brief description about the business is displayed here.</string>
+    <string name="business_item_reviews_title">Reviews</string>
+    <string name="business_item_write_review">(WRITE REVIEW)</string>
+    <string name="business_item_image_description">Business Image Displayed here</string>
+    <string name="action_check_in">Check In</string>
+    <string name="business_item_rate_title">Rate This Location</string>
+    <string name="business_item_rate_review_title">Your Review:</string>
+    <string name="business_item_rate_submit">Submit</string>
+    <string name="business_item_review_empty">Review cannot be empty!</string>
+    <string name="business_item_review_too_long">Your review is too long</string>
+    <string name="checkin_complete">Checked In...</string>
+    <string name="confirm_add_favorite_club">Add this place to Favorites list?</string>
+    <string name="confirm_remove_favorite_club">Remove this place from Favorites list?</string>
+    <string name="progress_removing">Removing...</string>
+    <string name="title_activity_activity__messages_single">Conversations</string>
+    <string name="action_add_friend">Add friend</string>
+    <string name="title_activity_activity__messages_group">MY GROUP</string>
+    <string name="dlg_rate_email_client_missing">Cannot find email client app</string>
+    <string name="confirm_add_to_friends">Add this person to friends?</string>
+    <string name="toast_already_friend">Already friend!</string>
+    <string name="toast_added_friend">Friend added</string>
+    <string name="toast_user_disabled_messaging">This user disabled messaging</string>
+    <string name="toast_to_be_implemented">Will be implemented soon</string>
+    <string name="alert_error_default">Error occured...</string>
+    <string name="toast_no_friends_in_group">Add friends to My Group first!</string>
+
+    <string name="facebook_app_id">1094751930556945</string>
+    <string name="ad_interstitial">ca-app-pub-4326688108423481/2536693657</string>
+    <string name="about_paragraph1">NightHawk was created to significantly enhance everyone\'s nightlife experience. With NightHawk, there is a distinct advantage for anyone looking for the hottest establishments, while also making it infinitely easier to meet new, like-minded individuals.
+    </string>
+    <string name="paragraph2">You can search for great places near you or check out other establishments if you plan to travel or go on a vacation! Look through different bars and see who\'s checked in. Message other people through the app. The fun in nightlife has gotten a whole lot better. If you can imagine the benefits of Tinder, FourSquare and Google Maps combined into one App, NightHawk is the ultimate solution!</string>
+    <string name="progress_query_location">Searching...</string>
+    <string name="confirm_search_nearby">Search for nearby locations?</string>
+    <string name="info_already_fb">Profile is already connected!</string>
+    <string name="toast_fb_connected">Connected successfully!</string>
+    <string name="progress_fb_connecting">Connecting...</string>
+    <string name="hint_search_location">Type location (Ex. Brooklyn, New York)</string>
+    <string name="title_activity_results_map">RESULTS</string>
+    <string name="lbl_less_than_10"><![CDATA[ < 10]]></string>
+    <string name="lbl_more_than_20"><![CDATA[ > 20]]></string>
+    <string name="confirm_remove_friend">Remove from friends?</string>
+    <string name="alert_messaging_is_off">Turn on messaging first!</string>
+    <string name="confirm_leave_chat_group">Leave this chat group?</string>
+    <string name="confirm_leave_chat_single">Leave this chat?</string>
+    <string name="confirm_leave_and_remove_chat_group">Leave and remove this chat group?</string>
+    <string name="confirm_leave_and_remove_chat_single">Leave and remove this chat?</string>
+    <string name="alert_removed_from_dialog">You\'ve been removed from this chat dialog!</string>
+
+    <string-array name="spMiles">
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+    </string-array>
+
+</resources>

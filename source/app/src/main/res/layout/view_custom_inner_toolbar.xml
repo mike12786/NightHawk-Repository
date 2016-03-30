@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/tbrMyGroup"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/personal_clubs_toolbar"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:popupTheme="@style/AppTheme.PopupOverlay">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="@style/InnerToolbarTitleText"
+        android:text="Toolbar Title"
+        android:layout_gravity="center"
+        android:id="@+id/tvToolbarTitle" />
+
+</android.support.v7.widget.Toolbar>

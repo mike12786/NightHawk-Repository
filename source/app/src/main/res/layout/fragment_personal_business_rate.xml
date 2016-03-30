@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <TextView
+        android:id="@+id/tvBusinessHeaderImageDescription"
+        style="@style/RobotoTextViewStyle.ListItemSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/business_item_rate_title"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorBlack"/>
+
+   <!-- <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbBusinessRate"
+        style= "@style/CustomRatingBar"
+        android:numStars="5"
+        android:stepSize="0.01"
+        android:isIndicator="true"
+        android:rating="3.5"
+        android:layout_gravity="center_horizontal" />-->
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rbBusinessRate"
+        style= "@style/CustomRatingBar"
+        android:numStars="5"
+        android:stepSize="1"
+        android:rating="3.5"
+        android:layout_gravity="center_horizontal" />
+
+    <TextView
+        style="@style/RobotoTextViewStyle.ListItemSubtitle"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/business_item_rate_review_title"
+        android:layout_margin="10dp"
+        android:textColor="@color/colorBlack" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:inputType="textMultiLine"
+        android:background="@color/grey_light_extra"
+        android:layout_margin="@dimen/margin_normal"
+        android:padding="@dimen/margin_normal"
+        android:gravity="left|top"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/etBusinessReview" />
+
+    <Button
+        style="@style/TransparentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/business_item_rate_submit"
+        android:layout_margin="@dimen/margin_normal"
+        android:id="@+id/btnBusinessRateSubmit"
+        android:layout_gravity="right"/>
+</LinearLayout>

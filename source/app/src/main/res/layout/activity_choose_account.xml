@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Choose_Account">
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlackTransparent"
+            android:orientation="vertical"
+            android:layout_marginBottom="@dimen/margin_very_large"
+            android:paddingBottom="@dimen/margin_normal">
+
+            <Button
+                android:id="@+id/btnChooseAccountPersonal"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_normal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="PERSONAL"
+                android:theme="@style/AppButtonStyle.Red"/>
+
+            <TextView
+                style="@style/AppTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="For users who want to find great places and have fun"
+                android:textSize="@dimen/textsize_normal"/>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBlackTransparent"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/margin_normal">
+            s<Button
+                android:id="@+id/btnChooseAccountBusiness"
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/image_normal"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="BUSINESS"
+                android:theme="@style/AppButtonStyle.Red"/>
+
+            <TextView
+                style="@style/AppTextView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:gravity="center_horizontal"
+                android:text="For business owners and personal who want to register their establishments"
+                android:textSize="@dimen/textsize_normal"/>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnChooseAccountNext"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:visibility="gone"
+        android:layout_height="@dimen/btn_transparent_black"
+        android:layout_marginTop="@dimen/margin_large"
+        android:textSize="@dimen/textsize_extra_large"
+        android:text="Next"
+        android:theme="@style/AppButtonStyle.BlackTransparent"/>
+
+</RelativeLayout>

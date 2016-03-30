@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+              android:animateLayoutChanges="true"
+    tools:context=".ui.activities.Activity_Personal_Business_Details">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/view_custom_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:id="@+id/lContainerCheckIn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/rlJustCheckedIn"
+                        android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp">
+
+            <com.zapporoo.nighthawk.ui.views.CircularImageView
+                android:id="@+id/circProfileImage"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_centerVertical="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_image_user" />
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                style="@style/RobotoTextViewStyle.ListItemTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@+id/circProfileImage"
+                android:layout_toRightOf="@+id/circProfileImage"
+                android:text="Name"
+                android:textColor="@color/colorBlack" />
+
+
+            <TextView
+                android:id="@+id/tvCheckedInInfo"
+                style="@style/RobotoTextViewStyle.ListItemSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/tvProfileName"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:text="+3 just checked in!"
+                android:textColor="@color/grey" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/circProfileImage"
+                android:background="@color/grey_light">
+
+            </View>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tvCheckedInTitle"
+            style="@style/RobotoTextViewStyle.ListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Already Checked IN"
+            android:textColor="@color/colorBlack" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvCheckedInItems"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorWhite"
+            android:padding="10dp"/>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/frBusinessDetails"
+        android:name="com.zapporoo.nighthawk.ui.fragments.Fragment_Personal_Business_Details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+

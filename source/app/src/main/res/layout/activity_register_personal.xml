@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Register_Personal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_large"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <com.zapporoo.nighthawk.ui.views.CircularImageView
+                android:id="@+id/ivPersonalProfile"
+                android:layout_width="@dimen/image_normal"
+                android:src="@drawable/ic_image_user"
+                android:scaleType="centerCrop"
+                android:layout_height="@dimen/image_normal"/>
+
+
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/etPersonalFirstName"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:hint="First Name"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/etPersonalLastName"
+            android:theme="@style/AppEditTextStyle"
+            />
+
+        <EditText
+            android:id="@+id/etPersonalLastName"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:hint="Last Name"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:theme="@style/AppEditTextStyle"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnPersonalFinish"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_transparent_black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="Finish"
+        android:textSize="@dimen/textsize_extra_large"
+        android:theme="@style/AppButtonStyle.Red"/>
+
+</RelativeLayout>

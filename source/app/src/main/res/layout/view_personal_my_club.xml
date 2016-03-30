@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorGrey"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="match_parent">
+
+    <TextView
+        style="@style/RobotoTextViewStyle.ListItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="Favorite Club's Name"
+        android:id="@+id/tvProfileName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="20dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp" />
+
+    <TextView
+        style="@style/RobotoTextViewStyle.ListItemDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="4.5/5"
+        android:id="@+id/tvMessageText"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_toRightOf="@+id/imageView"
+        android:layout_toEndOf="@+id/imageView"
+        android:layout_alignTop="@+id/imageView" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:src="@drawable/ratingbar_staron"
+        android:layout_below="@+id/tvProfileName"
+        android:layout_alignLeft="@+id/tvProfileName"
+        android:layout_alignStart="@+id/tvProfileName" />
+
+    <CheckBox
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:button="@drawable/selector_myclub_check_box"
+        android:background="@drawable/selector_myclub_check_box"
+        android:text=""
+        android:id="@+id/cbClubSelect"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBtnRate"
+        android:src="@drawable/ratingbar_staron"
+        android:layout_below="@+id/cbClubSelect"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

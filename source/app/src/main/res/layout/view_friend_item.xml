@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorGrey"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:layout_height="match_parent">
+
+    <com.zapporoo.nighthawk.ui.views.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_image_user"
+        android:layout_centerInParent="true"
+        android:scaleType="fitCenter"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/circFriendImage" />
+
+    <TextView
+        style="@style/RobotoTextViewStyle.ListItemTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/grey"
+        android:text="Friend name"
+        android:id="@+id/tvFriendName"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@+id/circFriendImage"
+        android:layout_toEndOf="@+id/circFriendImage" />
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgBtnInviteFriend"
+        android:src="@drawable/ic_add_circle_black_24dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

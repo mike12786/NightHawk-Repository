@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:id="@+id/llBusinessDetailsWrap"
+    android:layout_height="match_parent">
+
+    <CheckBox
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="4dp"
+        android:button="@drawable/selector_hotdeals_check_box"
+        android:background="@drawable/selector_hotdeals_check_box"
+        android:text=""
+        android:id="@+id/cbBusinessCheck" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:paddingBottom="10dp"
+        android:background="@drawable/selector_business_list_item"
+        android:layout_height="wrap_content">
+
+        <View
+            android:id="@+id/vSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:background="@color/colorBlack">
+        </View>
+
+        <TextView
+            style="@style/RobotoTextViewStyle.ListItemTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name of Establishment"
+            android:id="@+id/tvProfileName"
+            android:layout_below="@+id/vSeparator"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" android:layout_toLeftOf="@+id/rbBusinessRating" android:layout_toStartOf="@+id/rbBusinessRating"/>
+
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rbBusinessRating"
+            style= "@style/CustomRatingBar"
+            android:numStars="5"
+            android:stepSize="0.2"
+            android:rating="3.2"
+            android:layout_marginRight="10dp"
+            android:layout_alignTop="@+id/tvProfileName"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+
+
+        <RelativeLayout android:id="@+id/rlTypeOfEstablishment"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/tvProfileName"
+            android:layout_height="wrap_content">
+
+            <TextView   android:id="@+id/tvTypeOfEstablishment"
+                style="@style/RobotoTextViewStyle.ListItemSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Type of Establishment"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <TextView   android:id="@+id/tvBusinessAddress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/RobotoTextViewStyle.ListItemDescription"
+                android:text="Address"
+                android:layout_below="@+id/tvTypeOfEstablishment"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+
+            <RelativeLayout android:id="@+id/rlImgBusinessYelp"
+                android:layout_width="@dimen/image_normal"
+                android:layout_alignParentRight="true"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/image_normal"
+                    android:layout_height="@dimen/image_normal"
+                    android:src="@drawable/ic_image_grey"
+                    android:visibility="invisible"
+                    android:layout_centerHorizontal="true"
+                    android:id="@+id/imgBusinessPlaceholderYelp" />
+
+                <ImageView
+                    android:layout_width="@dimen/image_normal"
+                    android:layout_height="@dimen/image_normal"
+                    android:id="@+id/imgBusinessYelp"
+                    android:layout_centerHorizontal="true"
+                    android:scaleType="centerCrop" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/rlImgBusinessParse"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/rlTypeOfEstablishment"
+            android:layout_alignLeft="@+id/rlTypeOfEstablishment"
+            android:layout_alignStart="@+id/rlTypeOfEstablishment"
+            android:layout_alignRight="@+id/rbBusinessRating"
+            android:layout_alignEnd="@+id/rbBusinessRating"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_normal"
+                android:src="@drawable/ic_image_grey"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:id="@+id/imgBusinessPlaceholderParse" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/image_normal"
+                android:id="@+id/imgBusinessParse"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:scaleType="centerCrop"
+            />
+
+        </RelativeLayout>
+
+        <TextView
+            style="@style/RobotoTextViewStyle.ListItemBodyText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/placeholder_lorem_ipsum_medium"
+            android:id="@+id/tvHotDealBody"
+            android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/rlImgBusinessParse"
+            android:layout_toLeftOf="@+id/imgBtnBusinessRate"
+            android:layout_toStartOf="@+id/imgBtnBusinessRate" />
+
+        <ImageButton
+            android:layout_width="@dimen/image_small"
+            android:layout_height="@dimen/image_small"
+            android:layout_margin="10dp"
+            android:id="@+id/imgBtnBusinessRate"
+            android:scaleType="fitXY"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_below="@+id/rlImgBusinessParse"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_favorite_active" />
+    </RelativeLayout>
+
+</LinearLayout>

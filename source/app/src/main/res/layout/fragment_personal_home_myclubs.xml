@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Home_Personal$PlaceholderFragment">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_custom_inner_toolbar"
+        android:id="@+id/tbrClubSelection" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvMyClubs"
+        android:background="@color/grey_light_more"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/tbrClubSelection">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

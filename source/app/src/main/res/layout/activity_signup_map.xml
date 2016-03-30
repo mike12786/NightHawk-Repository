@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activities.Activity_Results_Map" >
+
+    <RelativeLayout
+        android:id="@+id/rlMapTop"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        android:background="@color/colorPrimaryDark"
+         >
+
+        <EditText
+            android:id="@+id/etMapAddress"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignTop="@+id/btnMapAddressSearch"
+            android:layout_alignBottom="@+id/btnMapAddressSearch"
+            android:layout_toLeftOf="@+id/btnMapAddressSearch"
+            android:singleLine="true"
+            android:text="MAP"
+            android:autoText="false" />
+
+        <Button
+            android:id="@+id/btnMapAddressSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="SEARCH"
+            android:textColor="@color/colorWhite"
+            android:paddingLeft="5dp"
+            android:background="@drawable/selector_cb_red"
+            android:paddingRight="5dp"
+            />
+    </RelativeLayout>
+
+    <fragment
+        android:id="@+id/fragmentMap"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rlMapTop"
+        class="com.google.android.gms.maps.SupportMapFragment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#D000"
+        android:orientation="vertical" >
+    </LinearLayout>
+
+</RelativeLayout>

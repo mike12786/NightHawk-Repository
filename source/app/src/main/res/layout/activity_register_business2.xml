@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Register_Business2">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical"
+        >
+
+    <EditText
+        android:id="@+id/etBusinessShortDescription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:hint="Short Descriptions"
+        android:minLines="5"
+        android:singleLine="false"
+        android:lines="5"
+        android:maxLines="5"
+        android:gravity="left|top"
+        android:padding="@dimen/margin_normal"
+        android:nextFocusDown="@+id/etBusinessHotDeals"
+        android:theme="@style/AppEditTextStyle"
+        />
+
+    <EditText
+        android:id="@+id/etBusinessHotDeals"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/edit_text_128"
+        android:layout_marginBottom="@dimen/margin_normal"
+        android:hint="Hot Deals"
+        android:gravity="left|top"
+        android:padding="@dimen/margin_normal"
+        android:theme="@style/AppEditTextStyle"
+        android:minLines="5"
+        android:singleLine="false"
+        android:lines="5"
+        android:maxLines="5"
+        android:imeOptions="actionDone"
+        />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnRegisterBusiness2Finish"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_transparent_black"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/margin_large"
+        android:text="Finish"
+        android:textSize="@dimen/textsize_extra_large"
+        android:theme="@style/AppButtonStyle.BlackTransparent"/>
+
+</RelativeLayout>

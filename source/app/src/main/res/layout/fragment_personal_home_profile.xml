@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_blur"
+    android:orientation="vertical"
+    tools:context=".ui.activities.Activity_Home_Personal">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_very_large"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/image_extra_large"
+                android:src="@drawable/ic_image_user"
+                android:layout_centerInParent="true"
+                android:layout_height="@dimen/image_extra_large"/>
+
+            <com.zapporoo.nighthawk.ui.views.CircularImageView
+                android:id="@+id/ivPersonalProfile"
+                android:layout_width="@dimen/image_extra_large"
+                android:src="@drawable/ic_image_user"
+                android:layout_centerInParent="true"
+                android:scaleType="matrix"
+                android:layout_height="@dimen/image_extra_large"/>
+
+            <TextView
+                android:id="@+id/tvPersonalName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ivPersonalProfile"
+                style="@style/AppTextView"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/margin_large"
+                android:text="SONJA LEE"/>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+        <Button
+            android:id="@+id/btnProfileHideMe"
+            android:layout_marginTop="@dimen/margin_large"
+            android:theme="@style/AppButtonStyle.Red"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/image_normal"
+            android:text="HIDE ME"/>
+
+        <Button
+            android:id="@+id/btnProfileFacebookConnect"
+            android:layout_marginTop="@dimen/margin_large"
+            android:visibility="visible"
+            android:theme="@style/AppButtonStyle.Blue"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/image_normal"
+            android:text="FACEBOOK CONNECT"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

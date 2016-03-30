@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDialogWrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="15dp"
+            android:gravity="center"
+            android:text="PLEASE CHECK YOUR EMAIL AND VERIFY YOUR ACCOUNT"
+            android:textColor="@color/colorWhite"
+            android:textSize="32sp" />
+
+        <LinearLayout
+            android:id="@+id/llDialogButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/tvAlert"
+            android:weightSum="1"
+            android:visibility="gone" >
+
+            <Button
+                android:id="@+id/btnDialogOk"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:text="OK"
+                android:theme="@style/AppButtonStyle.BlackTransparent"
+                />
+        </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

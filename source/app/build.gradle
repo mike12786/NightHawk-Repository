@@ -1,0 +1,96 @@
+buildscript {
+    repositories {
+        maven { url 'https://maven.fabric.io/public' }
+    }
+
+    dependencies {
+        classpath 'io.fabric.tools:gradle:1.+'
+    }
+}
+apply plugin: 'com.android.application'
+apply plugin: 'io.fabric'
+
+repositories {
+    maven { url 'https://maven.fabric.io/public' }
+}
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+    //useLibrary "org.apache.http.legacy"
+
+    defaultConfig {
+        applicationId "com.zapporoo.nighthawk"
+        minSdkVersion 16
+        targetSdkVersion 21
+        versionCode 11
+        versionName "1.0.8"
+        multiDexEnabled true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            applicationVariants.all { variant ->
+                variant.outputs.each { output ->
+                    project.ext { appName = 'Night-Hawk' }
+                    def formattedDate = new Date().format('yyyyMMddHHmmss')
+                    def newName = output.outputFile.name
+                    newName = newName.replace("app-", "$project.ext.appName-")
+                    newName = newName.replace("-release", "-release-v" + variant.versionName);
+                    //newName = newName.replace("-release", "-release" + formattedDate)
+                    //noinspection GroovyAssignabilityCheck
+                    output.outputFile = new File(output.outputFile.parent, newName)
+                }
+            }
+        }
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+    }
+
+    dexOptions {
+        javaMaxHeapSize "4g"
+    }
+}
+
+dependencies {
+    //compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'com.android.support:support-v13:23.1.1'
+    compile 'com.google.android.gms:play-services-maps:8.3.0'
+    compile 'com.google.android.gms:play-services-gcm:8.3.0'
+    compile 'com.google.android.gms:play-services-ads:8.3.0'
+    compile 'com.parse:parse-android:1.12.0'
+    compile 'com.karumi:headerrecyclerview:1.0.3'
+    compile 'com.yelp.clientlib:yelp-android:1.0.0'
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+
+    compile files('libs/quickblox-android-sdk-chat-2.5.jar')
+    compile files('libs/quickblox-android-sdk-core-2.5.jar')
+    compile files('libs/quickblox-android-sdk-messages-2.5.jar')
+    compile files('libs/ParseFacebookUtilsV4-1.10.4.jar')
+    compile('com.crashlytics.sdk.android:crashlytics:2.5.5@aar') {
+        transitive = true;
+    }
+    compile('com.facebook.android:facebook-android-sdk:4.8.2') {
+        exclude module: 'bolts-android'
+    }
+
+    compile 'com.github.orangegangsters:swipy:1.2.2@aar'
+
+    compile 'com.android.support:multidex:1.0.0'
+}
+
+apply plugin: 'com.google.gms.google-services'

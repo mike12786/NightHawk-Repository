@@ -1,0 +1,86 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llDialogWrap"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tvWwarning"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:textColor="@color/colorBlack"
+            android:layout_margin="15dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:text="Warning"
+            android:textSize="@dimen/textsize_extra_large" />
+
+        <TextView
+            android:id="@+id/tvAlert"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:textColor="@color/colorBlack"
+            android:layout_marginRight="@dimen/margin_large"
+            android:gravity="center"
+            android:text="By turning OFF Messages, you will no longer receive messages from other users."
+            android:textSize="@dimen/textsize_large" />
+
+        <CheckBox
+            android:id="@+id/cbMessagesDoNotShow"
+            android:layout_marginTop="@dimen/margin_normal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Do not show this again."
+            android:layout_marginLeft="@dimen/margin_large"
+        />
+
+        <LinearLayout
+            android:id="@+id/llDialogButtons"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_large"
+            android:layout_alignParentLeft="true"
+            android:background="@color/colorGreyMessagesCancel"
+            android:layout_below="@+id/tvAlert"
+            android:weightSum="2"
+            >
+
+            <Button
+                android:id="@+id/btnDialogCancel"
+                android:layout_width="0dp"
+                android:background="@color/colorWhite"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="1dp"
+                android:textColor="@color/colorGreyMessagesCancel"
+                android:layout_weight="1"
+                android:text="Cancel"
+                 />
+
+            <Button
+                android:id="@+id/btnDialogOk"
+                android:layout_width="0dp"
+                android:background="@color/colorWhite"
+                android:textColor="@color/colorGreyMessagesConfirm"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:layout_weight="1"
+                android:text="Confirm"
+                />
+        </LinearLayout>
+
+  </LinearLayout>
+
+</RelativeLayout>

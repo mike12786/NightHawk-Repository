@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/image_extra_large"
+            android:id="@+id/ivBusinessProfile"
+            android:scaleType="centerCrop"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="@color/colorGreen"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvProfileName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sample Business Name"
+                style="@style/AppTextView"
+                android:layout_centerHorizontal="true"
+                android:textSize="@dimen/textsize_really_large"
+                android:layout_marginTop="@dimen/margin_large"
+                />
+
+            <RatingBar
+                android:id="@+id/rbBusinessRating"
+                android:layout_width="wrap_content"
+                android:focusable="false"
+                android:isIndicator="true"
+                android:focusableInTouchMode="false"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvProfileName"
+                style= "@style/CustomRatingBarBig"
+                android:numStars="5"
+                android:stepSize="0.1"
+                android:rating="3.5"
+                android:layout_gravity="center_horizontal" />
+
+            <TextView
+                android:layout_below="@+id/rbBusinessRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTextView"
+                android:layout_alignParentLeft="true"
+                android:text="Overall Rating"
+                android:layout_margin="@dimen/margin_normal"/>
+
+            <TextView
+                android:id="@+id/tvBusinessRating"
+                android:layout_below="@+id/rbBusinessRating"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/AppTextView"
+                android:layout_alignParentRight="true"
+                android:text="4/5"
+                android:layout_margin="@dimen/margin_normal"/>
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvRatingBusiness"
+            android:background="@color/colorWhite"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

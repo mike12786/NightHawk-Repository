@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/imgBusinessParse"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/image_extra_large"
+        android:scaleType="centerCrop" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/tvBusinessHeaderImageDescription"-->
+        <!--style="@style/RobotoTextViewStyle.ListItemSubtitle"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="@string/business_item_image_description"-->
+        <!--android:textStyle="bold"-->
+        <!--android:gravity="center"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:textColor="@color/grey"/>-->
+
+    <include
+        android:id="@+id/incBusinessDetails"
+        layout="@layout/view_personal_business_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <View
+        android:id="@+id/vUpperSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/default_divider">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:id="@+id/llLocationWrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_toLeftOf="@+id/llLocationContactWrap"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+
+                android:src="@drawable/ic_location_on_grey_800_36dp"
+                />
+
+            <TextView
+                android:id="@+id/tvBusinessDetailsAddress"
+                style="@style/RobotoTextViewStyle.ListItemSubtitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginRight="@dimen/margin_large"
+                android:text="123 Location Ave\nNew York oclahoaps a\n ssssssssssssss dddddddddddddd fk sk fskjdh gksdjh gksdj"
+                android:textColor="@color/grey"
+                />
+        </LinearLayout>
+
+    <!--<TextView-->
+        <!--style="@style/RobotoTextViewStyle.ListItemSubtitle"-->
+        <!--android:id="@+id/tvBusinessDetailsCity"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Miami FL 33147"-->
+        <!--android:textColor="@color/grey"-->
+        <!--android:layout_below="@+id/tvBusinessDetailsAddress"-->
+        <!--android:layout_toRightOf="@+id/imageView2"-->
+        <!--android:layout_toEndOf="@+id/imageView2" />-->
+
+        <LinearLayout
+            android:id="@+id/llLocationContactWrap"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/ic_phone_grey_800_24dp"
+                />
+
+                <TextView
+                    android:id="@+id/tvBusinessDetailsPhone"
+                    style="@style/RobotoTextViewStyle.ListItemSubtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:text="(123) 123 - 4567"
+                    android:textColor="@color/grey"
+                    />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBusinessDetailsWebsite"
+        style="@style/RobotoTextViewStyle.ListItemSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:clickable="true"
+        android:text="woodtavern.com"
+        android:textColor="@color/grey" />
+
+
+    <View
+        android:id="@+id/vLowerSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvBusinessDetailsWebsite"
+        android:background="@color/default_divider">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+    <TextView
+        android:id="@+id/tvBusinessHotDealsTitle"
+        style="@style/RobotoTextViewStyle.ListItemBoldTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="@string/business_item_reviews_title"
+        android:textColor="@color/colorBlack" />
+
+    <Button
+        android:id="@+id/btnBusinessDetailsWriteReview"
+        style="@style/TransparentButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/business_item_write_review" />
+    </RelativeLayout>
+
+</LinearLayout>

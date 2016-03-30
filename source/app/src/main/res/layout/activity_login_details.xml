@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Login_Details">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/margin_large"
+        android:layout_marginRight="@dimen/margin_large"
+        android:layout_marginTop="@dimen/margin_really_large"
+        >
+
+        <EditText
+            android:id="@+id/etLoginDetailsEmail"
+            android:theme="@style/AppEditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:singleLine="true"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:nextFocusDown="@+id/etLoginDetailsPassword"
+            android:layout_marginBottom="@dimen/margin_normal" />
+
+        <EditText
+            android:id="@+id/etLoginDetailsPassword"
+            android:theme="@style/AppEditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:singleLine="true"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:hint="Password"
+            android:nextFocusDown="@+id/etLoginDetailsPasswordConfirm"
+            android:inputType="textPassword" />
+
+        <EditText
+            android:id="@+id/etLoginDetailsPasswordConfirm"
+            android:theme="@style/AppEditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:hint="Confirm Password"
+            android:singleLine="true"
+            android:imeOptions="actionDone"
+            android:layout_marginBottom="@dimen/margin_normal"
+            android:inputType="textPassword" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLoginDetailsNext"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/btn_transparent_black"
+        android:layout_marginTop="@dimen/margin_large"
+        android:textSize="@dimen/textsize_extra_large"
+        android:text="Next"
+        android:theme="@style/AppButtonStyle.BlackTransparent"/>
+
+</RelativeLayout>

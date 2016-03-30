@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    android:orientation="vertical"
+    tools:context=".ui.activities.Activity_Home_Personal">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_height="?attr/actionBarSize"
+        android:weightSum="3"
+        android:layout_width="match_parent">
+
+        <include
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/incHotDeals"
+            layout="@layout/view_personal_home_search_option" />
+        <include
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/incMyGroup"
+            layout="@layout/view_personal_home_search_option" />
+        <include
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/incCheckIn"
+            layout="@layout/view_personal_home_search_option" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <EditText
+            android:id="@+id/etSearchLocation"
+            style="@style/RoundedEditText"
+            android:hint="@string/hint_search_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_edit_height"
+            android:paddingRight="@dimen/margin_large"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_toLeftOf="@+id/ivToggleGps"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_gravity="center_horizontal" />
+
+        <ImageView
+            android:id="@+id/ivToggleGps"
+            android:layout_width="@dimen/image_small_2"
+            android:layout_height="@dimen/image_small_2"
+            android:layout_toLeftOf="@+id/btnShowResultsMap"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_gps_off"
+            />
+
+        <ImageButton
+            android:id="@+id/btnShowResultsMap"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_normal"
+            android:background="@drawable/selector_btn_gmaps"
+            android:text="MAP"
+            android:layout_alignParentRight="true"
+            />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/btnTestSearch">
+
+        <EditText
+            style="@style/RoundedSearchEditTextCustom"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/search_edit_height"
+            android:id="@+id/etSearch"
+            android:hint="@string/hint_search_edit"
+            android:paddingRight="@dimen/margin_large"
+            android:imeOptions="actionSearch"
+            android:singleLine="true"
+            android:layout_marginRight="@dimen/margin_normal"
+            android:layout_gravity="center_horizontal" />
+
+        <ProgressBar
+            android:id="@+id/pbSearch"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:visibility="invisible"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnTestSearch"
+            android:layout_width="@dimen/image_normal"
+            android:layout_height="wrap_content"
+            android:visibility="visible"
+            android:theme="@style/AppButtonStyle.Blue"
+            android:textSize="@dimen/textsize_small"
+            android:text="Search"
+            android:layout_alignParentRight="true"/>
+
+
+
+    </RelativeLayout>
+
+
+
+    <com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout
+        android:id="@+id/srSearch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srl_direction="top">
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvBusiness"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:overScrollMode="never"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </android.support.v7.widget.RecyclerView>
+    </com.orangegangsters.github.swipyrefreshlayout.library.SwipyRefreshLayout>
+
+</LinearLayout>

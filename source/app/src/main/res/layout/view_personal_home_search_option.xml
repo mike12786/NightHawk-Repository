@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    style="@style/PersonalHomeTabItem"
+    android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgTop"
+            android:layout_marginTop="3dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerInside"
+            android:clickable="false"
+            android:src="@drawable/ic_tab_business_hot_deals"
+            android:layout_above="@+id/tvTitle" />
+
+        <TextView
+            android:theme="@style/PersonalHomeTabItem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:id="@+id/tvTitle"
+            android:text="Hot Deals"
+            android:clickable="false"
+            android:layout_marginBottom="10dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

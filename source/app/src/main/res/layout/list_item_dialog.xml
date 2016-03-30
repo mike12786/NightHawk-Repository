@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:background="@color/colorGrey"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp"
+    android:layout_height="wrap_content">
+
+    <com.zapporoo.nighthawk.ui.views.CircularImageView
+        android:id="@+id/circProfileImage"
+        android:layout_width="@dimen/image_small"
+        android:layout_height="@dimen/image_small"
+        android:layout_marginLeft="10dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_image_user"/>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1">
+
+        <TextView
+            style="@style/RobotoTextViewStyle.ListItemTitle"
+            android:layout_marginBottom="@dimen/margin_small"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLines="1"
+            android:textColor="@color/grey"
+            android:text="Profile name"
+            android:layout_toRightOf="@+id/tvMessageTime"
+            android:layout_alignParentLeft="true"
+            android:id="@+id/tvProfileName"
+            android:layout_toLeftOf="@+id/tvMessageTime"
+            android:layout_toStartOf="@+id/tvMessageTime"/>
+
+        <TextView
+            style="@style/EllipsizedMessageTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:maxLines="2"
+            android:text="@string/placeholder_lorem_ipsum_medium"
+            android:id="@+id/tvMessageText"
+            android:gravity="center_vertical"
+            android:layout_below="@+id/tvProfileName"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+
+        <TextView
+            style="@style/RobotoTextViewStyle.ListItemDescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/grey"
+            android:text="06:49:12"
+            android:id="@+id/tvMessageTime"
+            android:gravity="center_vertical"
+            android:layout_alignBottom="@+id/tvProfileName"
+            android:layout_alignRight="@+id/tvMessageText"
+            android:layout_alignEnd="@+id/tvMessageText" />
+    </RelativeLayout>
+
+    <ImageView
+        android:layout_width="@dimen/image_small_2"
+        android:layout_height="@dimen/image_small_2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:focusable="false"
+        android:enabled="false"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="@dimen/margin_normal"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/ic_arrow_right"
+        android:id="@+id/imgBtnSendMessage" />
+
+    <ImageButton
+        android:layout_width="@dimen/image_small"
+        android:layout_height="@dimen/image_small"
+        android:id="@+id/imgBtnRemove"
+        android:src="@drawable/ic_delete_grey"
+        android:background="?android:attr/selectableItemBackground"
+        />
+
+</LinearLayout>

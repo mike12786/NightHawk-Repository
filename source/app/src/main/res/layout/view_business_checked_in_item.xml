@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zapporoo.nighthawk.ui.views.CircularImageView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/circProfileImage"
+    android:layout_width="@dimen/image_small"
+    android:layout_height="@dimen/image_small"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:scaleType="fitCenter"
+    android:src="@drawable/ic_image_user" />

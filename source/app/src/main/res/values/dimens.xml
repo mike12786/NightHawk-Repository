@@ -1,0 +1,51 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="appbar_padding_top">8dp</dimen>
+
+    <!-- Common -->
+    <dimen name="margin_very_small">1dp</dimen>
+    <dimen name="margin_extra_small">2dp</dimen>
+    <dimen name="margin_small">4dp</dimen>
+    <dimen name="margin_normal">8dp</dimen>
+    <dimen name="margin_large">16dp</dimen>
+    <dimen name="margin_extra_large">32dp</dimen>
+    <dimen name="margin_very_large">48dp</dimen>
+    <dimen name="margin_really_large">64dp</dimen>
+    <dimen name="textsize_very_small">8sp</dimen>
+    <dimen name="textsize_extra_small">10sp</dimen>
+    <dimen name="textsize_small">12sp</dimen>
+    <dimen name="textsize_normal">14sp</dimen>
+    <dimen name="textsize_large">16sp</dimen>
+    <dimen name="textsize_extra_large">18sp</dimen>
+    <dimen name="textsize_very_large">21sp</dimen>
+    <dimen name="textsize_really_large">24sp</dimen>
+    <dimen name="toolbar_inner_height">52dp</dimen>
+
+    <!-- Image Size -->
+    <dimen name="image_small_4">12dp</dimen>
+    <dimen name="image_small_3">20dp</dimen>
+    <dimen name="image_small_2">24dp</dimen>
+    <dimen name="image_small_1">36dp</dimen>
+    <dimen name="image_small">48dp</dimen>
+    <dimen name="image_normal">72dp</dimen>
+    <dimen name="image_large">96dp</dimen>
+    <dimen name="image_extra_large">128dp</dimen>
+    <dimen name="image_very_large">144dp</dimen>
+
+    <!-- Image Size -->
+    <dimen name="edit_text_normal">36dp</dimen>
+    <dimen name="edit_text_large">48dp</dimen>
+    <dimen name="edit_text_extra_large">56dp</dimen>
+    <dimen name="edit_text_128">128dp</dimen>
+
+    <!--Button -->
+    <dimen name="btn_transparent_black">56dp</dimen>
+
+    <!--Personal Home -->
+    <dimen name="personal_home_top_menu_height">54dp</dimen>
+    <dimen name="search_edit_height">34dp</dimen>
+    <dimen name="messages_edit_height">40dp</dimen>
+</resources>

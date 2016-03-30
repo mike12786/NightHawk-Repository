@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/background"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Login">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/margin_really_large"
+        >
+
+        <EditText
+            android:id="@+id/etLoginEmail"
+            android:theme="@style/AppEditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:singleLine="true"
+            android:nextFocusDown="@+id/etLoginPassword"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:layout_marginBottom="@dimen/margin_normal"
+            />
+
+        <EditText
+            android:id="@+id/etLoginPassword"
+            android:theme="@style/AppEditTextStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_extra_large"
+            android:imeOptions="actionDone"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="Password"/>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:text="Remember me"
+                android:textSize="@dimen/textsize_normal"
+                android:textColor="@color/colorWhite"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/edit_text_normal"
+                android:gravity="center_vertical"
+                android:text="Forgot Password?"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="@dimen/textsize_large"
+                style="@style/AppTextView"/>
+
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_marginTop="@dimen/margin_large"
+            android:theme="@style/AppButtonStyle.Red"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/image_normal"
+            android:text="LOG IN"/>
+
+        <TextView
+            android:id="@+id/tvRegister"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/edit_text_normal"
+            android:text="No account? Register now"
+            android:gravity="center"
+            android:layout_alignParentRight="true"
+            style="@style/AppTextView"/>
+
+        <Button
+            android:id="@+id/btnTest"
+            android:layout_marginTop="@dimen/margin_large"
+            android:theme="@style/AppButtonStyle.Red"
+            android:layout_width="fill_parent"
+            android:layout_height="@dimen/image_normal"
+            android:text="TEST"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnFacebookLogin"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/image_small"
+        android:visibility="visible"
+        android:theme="@style/AppButtonStyle.Blue"
+        android:layout_alignParentBottom="true"
+        android:text="LOGIN via FACEBOOK"
+        />
+
+</RelativeLayout>

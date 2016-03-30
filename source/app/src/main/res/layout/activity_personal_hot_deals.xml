@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_content"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context="com.zapporoo.nighthawk.ui.activities.Activity_Home_Personal">
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/view_custom_toolbar"
+        android:id="@+id/toolbar" />
+
+    <fragment android:name="com.zapporoo.nighthawk.ui.fragments.Fragment_Personal_HotDeals"
+        android:id="@+id/frHotDeals"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>
+
